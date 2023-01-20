@@ -3,7 +3,7 @@ import React from 'react'
 
 function List() {
   return (
-    <div>hi</div>
+    <div>hewwo there</div>
   )
 }
 

@@ -1,9 +1,12 @@
 import React from 'react'
+import hero from './hero.png'
 
 function Home() {
 
   return (
-    <div>hi</div>
+    <div className="hero">
+      <img src={hero} alt="main hero for muloo"></img>
+    </div>
   )
 
 

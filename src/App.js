@@ -38,7 +38,7 @@ useEffect(() => {
           </Route>
 
         
-            <Route path = "/list">
+            <Route path = "/list/new">
             <List/>
           </Route>
 
