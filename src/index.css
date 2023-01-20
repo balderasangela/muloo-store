@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(213, 171, 243);
+  background: #d5abf3;
 }
 
 code {
@@ -29,7 +29,7 @@ code {
 }
 
 .logo {
-  height:80px;
+  height:100px;
 }
 
 /* about section */
@@ -38,19 +38,22 @@ code {
   margin-left: 350px;
   margin-right:350px;
   padding: 10px;
- display:block;
-}
-.aboutText {
-  float:left;
-  width:500px
+  display: grid;
+  align-items:baseline; 
+  grid-template-columns: 1fr 1fr ;
+  column-gap: 5px;
+ list-style-type: none;
+ 
+ 
 }
 
-.aboutHeading {
+
+.container img {
+  height:350px;
+  width: 350px;
+}
+
+.container p {
+  width:300px;
   text-align: center;
-}
-
-.aboutImage{
-  float:right;
-  width: 200px;
-  
 }
