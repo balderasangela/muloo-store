@@ -19,7 +19,7 @@ function handleSubmit(e) {
         value={newSearch}
         onChange={(e) => setNewSearch(e.target.value)}
       />
-      <button type="submit">💖</button>
+      <button className="heart"type="submit">💖</button>
     </form>
   );
 }
