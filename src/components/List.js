@@ -1,4 +1,6 @@
 import { useState } from "react";
+import hero from './hero.png'
+
 
 const List = ({ onAddToys }) => {
   const [formData, setFormData] = useState({
@@ -43,8 +45,13 @@ const List = ({ onAddToys }) => {
 
   return (
 
-  <form className="form" autoComplete="off" onSubmit={handleSubmit}>
-  <h3>Add new listing</h3>
+  <form className="formListing" autoComplete="off" onSubmit={handleSubmit}>
+
+<div className="logo-form">
+      <img src={hero} alt="main hero for muloo"></img>
+    </div>
+
+  <h1>Add new listing</h1>
 
   <label htmlFor="name">Name</label>
   <input
@@ -63,7 +70,15 @@ const List = ({ onAddToys }) => {
     onChange={handleChange}
     value={formData.image}
   />
-  
+  <label htmlFor="stock">Stock</label>
+    <input
+      type="text"
+      id="stock"
+      name="stock"
+      onChange={handleChange}
+      value={formData.stock}
+    />
+
   <label htmlFor="about">About</label>
   <textarea
     id="about"
@@ -73,17 +88,9 @@ const List = ({ onAddToys }) => {
   />
 
 
-<label htmlFor="stock">Stock</label>
-  <input
-    type="text"
-    id="stock"
-    name="stock"
-    onChange={handleChange}
-    value={formData.stock}
-  />
 
 
-  <button type="submit">Add Project</button>
+  <button className = "listButton" type="submit">Add Project</button>
 </form>
   )
 };

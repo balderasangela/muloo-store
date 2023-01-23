@@ -19,7 +19,7 @@ function NavBar({onSearch }) {
         <NavLink to="/buy/:id"><button>Buy</button></NavLink>
         <NavLink to="/cart/:id"><button>Cart</button></NavLink>
      
-      <Search onSearch={onSearch} />
+      {/* <Search onSearch={onSearch} /> */}
        
       </div>
      

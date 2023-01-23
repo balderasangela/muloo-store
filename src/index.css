@@ -15,13 +15,30 @@ code {
     monospace;
 }
 
-/* hero section */
-.hero img{
-  width: 1010px;
+/* homesection */
+
+
+.hero {
+  width: 600px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
+  height: 400px;
+  margin-bottom: 20px;
 }
+
+.hero h2 {
+  text-align: center;
+  font-size: 50px;
+  color: #5a5251;
+}
+
+.home-logo {
+  border-bottom: 3px solid #ffffff;
+
+}
+
 
 /* navbar section */
 .nav-container {
@@ -29,11 +46,13 @@ code {
   justify-content: space-between;
   align-items: center;
  margin: 5px 10px 0px 10px;
+ border-bottom: 1px solid #ffffff;
+
 }
 
 
 
-.nav-container button {
+.nav-container button, .elsa-button, .listButton {
   outline: none;
   border:none;
   cursor: pointer;
@@ -65,7 +84,7 @@ code {
 }
 
 .logo {
-  height:180px;
+  height:140px;
 }
 
 h1{
@@ -73,6 +92,26 @@ h1{
 }
 
 /* about section */
+
+
+.aboutHeading {
+  text-align: center;
+}
+
+.aboutInfo {
+  margin:25px;
+  margin-left: 350px;
+  margin-right:350px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr  ;
+  text-align: left;
+}
+
+.aboutImage {
+  width: 400px;
+}
+
 
 .container {
   margin:25px;
@@ -82,11 +121,18 @@ h1{
   display: grid;
   align-items:baseline; 
   grid-template-columns: 1fr 1fr ;
-  column-gap: 5px;
+  column-gap: 25px;
  list-style-type: none;
- 
 }
 
+li {
+  border: 2px solid white;
+  padding:10px 20px 10px 20px;
+}
+
+ul li{
+  margin-bottom: 20px;
+}
 .container img {
   height:350px;
   width: 350px;
@@ -103,4 +149,52 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* form section  */
+.formListing {
+  display: block;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  background-color: #f9f9f99b;
+  display: grid;
+  grid-template-columns: 1fr  ;
+  
+ width: 600px;
+ align-content: center;
+ padding: 15px;
+ 
+ 
+}
+
+input {
+  height: 20px;
+}
+
+label {
+  font-size: 20px;
+  margin: 5px;
+}
+
+.listButton {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.logo-form img {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr  ;
+  column-gap: 5px;
+}
+
+/* 404 page */
+.error {
+  width: auto;
+  height: 580px;
 }

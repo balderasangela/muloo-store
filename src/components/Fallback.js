@@ -1,11 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import error from './404page.png'
 
 function Fallback() {
   return (
-    <div>
-        <h1>HEWWO THERE :3</h1>
-        <Link to ="/"> CLICK HERE TO GO HOME</Link>
+    <div className='error'>
+        
+        <Link to ="/"> 
+        <img  style={{ width: '100%', height:'100%' }} src={error} alt="error page"></img>
+        </Link>
     </div>
   )
 }
