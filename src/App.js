@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar";
 import List from "./components/List";
 import About from "./components/About";
 import Home from "./components/Home";
+import Cart from './components/Cart';
 
 function App() {
 
@@ -31,7 +32,9 @@ useEffect(() => {
           </Route>
 
          
-
+          <Route path = "/cart">
+            <Cart />
+          </Route>
         
             <Route path = "/about" >
             <About/>

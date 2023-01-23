@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import React from 'react'
 
+
 function Buy() {
   const [toys, setToys] = useState([]);
-  const [cart,setCart] = useState([])
+  
 
   useEffect(() => {
     fetch("http://localhost:3000/toys")
@@ -20,17 +21,14 @@ function Buy() {
         <>
         <li>
           <img src={toys.image} alt={toys.name} />
-          <h1> {toys.name}</h1>
-          <p key={toys.id}>{toys.about} </p>
-          <button>ADD TO CART</button>
+          <h1 className='name-image'> {toys.name}</h1>
+          <h2 className='about-image' key={toys.id}>{toys.about} </h2>
+          <h3 className='stock-image'>Stock:{toys.stock}</h3>
+          <button className='elsa-button'>ADD TO CART</button>
           </li>
         </>
       ))}
     </ul>
-
-
-
-
   )
 }
 

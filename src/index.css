@@ -84,6 +84,7 @@ h1{
   grid-template-columns: 1fr 1fr ;
   column-gap: 5px;
  list-style-type: none;
+ 
 }
 
 .container img {
@@ -91,7 +92,15 @@ h1{
   width: 350px;
 }
 
-.container p {
- width: 350px;
+.container h2,h3 {
+ width: 320px;
   text-align: center;
+}
+
+.elsa-button {
+  background-color: #e28cc6;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
