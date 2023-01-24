@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import error from './404page.png'
+import error from './/assest/404page.png'
 
 function Fallback() {
   return (

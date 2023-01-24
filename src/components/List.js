@@ -1,44 +1,39 @@
-import { useState } from "react";
-import hero from './hero.png'
+
+import { useForm } from "../Hooks/useForm";
+
 
 
 const List = ({ onAddToys }) => {
-  const [formData, setFormData] = useState({
+  
+  const itsRewindTime = {
     name: "",
     image: "",
     about: "",
-    stock: ""
-  });
+    stock: "",
+  }
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((formData) => ({ ...formData, [name]: value }));
-  };
+  const {formData, setFormData, handleChange} = useForm(itsRewindTime)
+
+  
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     const configObj = {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
-      body: JSON.stringify({ ...formData, stock: 0 }),
+      body: JSON.stringify({...formData}),
     };
 
     fetch("http://localhost:3000/toys", configObj)
-      .then((resp) => resp.json())
+      .then((r) => r.json())
       .then((toy) => {
         onAddToys(toy);
-        setFormData({
-          name: "",
-          image: "",
-          about: "",
-          stock: ""
-        });
+        setFormData(itsRewindTime);
       });
   };
-
 
 
 
@@ -47,9 +42,9 @@ const List = ({ onAddToys }) => {
 
   <form className="formListing" autoComplete="off" onSubmit={handleSubmit}>
 
-<div className="logo-form">
+{/* <div className="logo-form">
       <img src={hero} alt="main hero for muloo"></img>
-    </div>
+    </div> */}
 
   <h1>Add new listing</h1>
 
@@ -72,7 +67,7 @@ const List = ({ onAddToys }) => {
   />
   <label htmlFor="stock">Stock</label>
     <input
-      type="text"
+      type="number"
       id="stock"
       name="stock"
       onChange={handleChange}
@@ -90,7 +85,7 @@ const List = ({ onAddToys }) => {
 
 
 
-  <button className = "listButton" type="submit">Add Project</button>
+  <button className = "listButton" type="submit" >Add Project</button>
 </form>
   )
 };

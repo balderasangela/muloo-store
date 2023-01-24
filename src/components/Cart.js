@@ -1,11 +1,19 @@
 import React from 'react'
+// import { useState } from 'react';
+// import Buy from './Buy';
 
 function Cart() {
-  return (
-    <div>
-        this is used to see what is in your cart and delete items from the cart!
-    </div>
-  )
-}
+  
+ 
+  
+    return (
+      <div className="app">
+        
+      
+      </div>
+    );
+  }
+  
+
 
 export default Cart

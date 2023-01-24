@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import logo from "./logoforphase2.png"
-import Search from './Search'
+import logo from ".//assest/logoforphase2.png"
+// import Search from './Search'
 
 function NavBar({onSearch }) {
   return (

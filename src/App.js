@@ -28,7 +28,9 @@ useEffect(() => {
 
        
           <Route path = "/buy">
-            <Buy />
+            <Buy 
+            />
+            
           </Route>
 
          

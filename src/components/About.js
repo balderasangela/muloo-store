@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutImage from './plushies.png'
+import aboutImage from './/assest/plushies.png'
 
 function About() {
   return (
