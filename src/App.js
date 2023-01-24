@@ -18,6 +18,9 @@ useEffect(() => {
   .then((toys) => setToys(toys))
 }, [])
 
+const onAddToy = (newToy) => {
+  setToys((toys) => [...toys, newToy]);
+};
 
   return (
     <div className="App">
@@ -44,7 +47,7 @@ useEffect(() => {
 
         
             <Route path = "/list/new">
-            <List/>
+            <List onAddToy={onAddToy}/>
           </Route>
 
 

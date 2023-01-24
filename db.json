@@ -78,27 +78,7 @@
       "about": "Super soft kawaii plushies and cute appearance,very good gift idea for birthdays and festivals",
       "stock": 3,
       "price": 69
-    },
-    {
-      "name": "ted",
-      "image": " https://m.media-amazon.com/images/I/61DBuG8KLDL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
-      "about": "hello",
-      "stock": "",
-      "id": 10
-    },
-    {
-      "name": "tef",
-      "image": " https://m.media-amazon.com/images/I/61DBuG8KLDL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
-      "about": "geg",
-      "stock": "80",
-      "id": 11
-    },
-    {
-      "name": "fefqdda",
-      "image": " https://m.media-amazon.com/images/I/61DBuG8KLDL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
-      "about": "hesd",
-      "stock": "7",
-      "id": 12
     }
+    
   ]
 }

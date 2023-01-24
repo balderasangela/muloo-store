@@ -27,7 +27,11 @@ function Buy() {
           <h1 className='name-image'> {toys.name}</h1>
           <h2 className='about-image' key={toys.id}>{toys.about} </h2>
           <h3 className='stock-image'>Stock:{toys.stock}</h3>
+
+          <div>
+          <button className='elsa-button' type="submit" >Delete</button>
           <button className='elsa-button' type="submit" >ADD TO CART</button>
+          </div>
           </li>
         </>
       ))}
